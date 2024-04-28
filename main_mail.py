@@ -30,6 +30,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 email=os.getenv('Your_mail')
+auth_password=os.getenv('auth_pass')
 re_email=input("Enter reciever mail : ")
 api_key = os.getenv('WEATHER_API_KEY')
 location = input("Enter your location : ")
@@ -57,7 +58,7 @@ except Exception as e:
 try:
   server=smtplib.SMTP("smtp.gmail.com",587)
   server.starttls()
-  server.login(email,"etjkthvoscdqjoej")
+  server.login(email,auth_password)
   server.sendmail(email,re_email,str(email_text))
   print(f"Mail sent successfully to {re_email}")
 except Exception as e:
