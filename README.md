@@ -14,7 +14,7 @@ This project is a simple python script built using python3. It allows users to s
 ## Prerequisites
 Before getting started, ensure you have the following prerequisites installed on your system:
 
-- Git: [Download & Install Git](https://git-scm.com/downloads)
+- Git: [Download & Install](https://git-scm.com/downloads)
 - Any IDE
 - Python:[Download & Install](https://www.python.org/downloads/)
 ## Installation
@@ -34,7 +34,7 @@ Sign up for a Weather.com API key at
 
 TO get gemini api
 signup and create new api
-Signup:(https://www.bing.com/ck/a?!&&p=58053060397588beJmltdHM9MTcxNDE3NjAwMCZpZ3VpZD0wMWNiMWQ1Ni00NzZlLTZkYjctMmY2ZS0wOTFkNDZjODZjNDUmaW5zaWQ9NTIxNA&ptn=3&ver=2&hsh=3&fclid=01cb1d56-476e-6db7-2f6e-091d46c86c45&psq=gemini+ai+api&u=a1aHR0cHM6Ly9haS5nb29nbGUuZGV2Lw&ntb=1)
+[Signup](https://www.bing.com/ck/a?!&&p=58053060397588beJmltdHM9MTcxNDE3NjAwMCZpZ3VpZD0wMWNiMWQ1Ni00NzZlLTZkYjctMmY2ZS0wOTFkNDZjODZjNDUmaW5zaWQ9NTIxNA&ptn=3&ver=2&hsh=3&fclid=01cb1d56-476e-6db7-2f6e-091d46c86c45&psq=gemini+ai+api&u=a1aHR0cHM6Ly9haS5nb29nbGUuZGV2Lw&ntb=1)
 
 
 -
