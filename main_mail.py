@@ -24,3 +24,42 @@ def generate_email(weather_data,GEMINI_API_KEY):
         return convo.last.text.replace("[Name]", "User")
     except Exception as e:
         print("An error occurred while generating the email.")
+#email
+import smtplib
+import os
+!pip install python-dotenv
+from dotenv import load_dotenv
+load_dotenv()
+email=os.getenv('Your_mail')
+re_email=input("Enter reciever mail : ")
+api_key = os.getenv('WEATHER_API_KEY')
+location = input("Enter your location : ")
+try:
+  weather_data = get_weather_data(api_key, location)
+except Exception as e:
+   print("Api error ")
+GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
+try:
+  text=get_weather_data(api_key, location)
+except Exception as e:
+  print(e)
+try:
+  sample="Location"+text['location']['name']
+  sample+="\n Wheather condition"+text['current']['condition']['text']
+  sample+="\n Temperature C"+str(text['current']['temp_c'])
+  sample+="\n Humidity"+str(text['current']['humidity'])
+  sample+="\n precipitation"+str(weather_data['current']['precip_mm'])
+except Exception as e:
+  print('Error getting location try correcting your api')
+try:
+  email_text=generate_email(sample,GEMINI_API_KEY)
+except Exception as e:
+  print('error generating email text')
+try:
+  server=smtplib.SMTP("smtp.gmail.com",587)
+  server.starttls()
+  server.login(email,"etjkthvoscdqjoej")
+  server.sendmail(email,re_email,str(email_text))
+  print(f"Mail sent successfully to {re_email}")
+except Exception as e:
+  print('error sending mail')
