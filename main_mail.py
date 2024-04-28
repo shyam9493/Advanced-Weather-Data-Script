@@ -27,7 +27,6 @@ def generate_email(weather_data,GEMINI_API_KEY):
 #email
 import smtplib
 import os
-!pip install python-dotenv
 from dotenv import load_dotenv
 load_dotenv()
 email=os.getenv('Your_mail')
