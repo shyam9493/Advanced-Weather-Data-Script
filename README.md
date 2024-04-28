@@ -1,7 +1,7 @@
 #  Advanced Weather Data Script
 
 ## Description
-This project is a simple python script built using python3. It allows users to send email which contains the wheather report of a particular location.
+This project is a simple python script built using python3. It allows users to send email which contains the weather report of a particular location.
 
 ## Table of Contents
 - [Prerequisites](#Prerequisites)
