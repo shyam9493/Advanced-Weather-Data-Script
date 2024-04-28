@@ -6,7 +6,7 @@ This project is a simple python script built using python3. It allows users to s
 ## Table of Contents
 - [Prerequisites](#Prerequisites)
 - [Installation](#Installation)
-- [Dependencies](#Dependencies)
+- [Output](#Output)
 - [Approach](#approach)
 - [Api](#api)
   
@@ -21,12 +21,14 @@ Before getting started, ensure you have the following prerequisites installed on
 To run this project locally, follow these steps:
 - Clone the repository:
 ```bash
-git clone 
+git clone https://github.com/shyam9493/Advanced-Weather-Data-Script.git
 ```
 - locate to the folder where you have installed and create a file named '.env' and the content is 
 ```bash
 WEATHER_API_KEY="Your_api_key"
 GEMINI_API_KEY="Your_api_key"
+Your_mail="Your_mail"
+auth_password="your mail authentication password"
 ```
 To get API key 
 Sign up for a Weather.com API key at
@@ -35,17 +37,23 @@ Sign up for a Weather.com API key at
 TO get gemini api
 signup and create new api
 [Signup](https://www.bing.com/ck/a?!&&p=58053060397588beJmltdHM9MTcxNDE3NjAwMCZpZ3VpZD0wMWNiMWQ1Ni00NzZlLTZkYjctMmY2ZS0wOTFkNDZjODZjNDUmaW5zaWQ9NTIxNA&ptn=3&ver=2&hsh=3&fclid=01cb1d56-476e-6db7-2f6e-091d46c86c45&psq=gemini+ai+api&u=a1aHR0cHM6Ly9haS5nb29nbGUuZGV2Lw&ntb=1)
+- To get auth password it is mandatory that you should turn on two step authentication and search for app passwords and create a new password and that password is your auth_password
+- To install requirements just run
+```bash
+pip install -r requirements.txt
+```
+- after successful installation to run the application go to terminal and enter
+```bash
+python main_mail.py
+```
 
-
--
-
-## Dependencies
+## Output
+It will ask you to enter the email of the reciever and the location 
+if you enter those your email will be sent successfully
 
 ## Approach
 
-
-## Output
-
+I first started creating a api for the weather.com and made a sample responses and then tried to send sample mails through smtp and then started to integrate gemini ai to generate emails and then I merged those 3 fields into a main_mail.py .
 
 
 ## API 
