@@ -91,8 +91,8 @@ signup and create new api
         "gust_mph": 9,
         "gust_kph": 14.5
       }
-    }```
-Gemini ani sample response
+    }
+- Gemini ani sample response
 ```bash
 Subject: Weather Update: Mist 
 
