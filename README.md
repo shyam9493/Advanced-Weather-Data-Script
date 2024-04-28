@@ -94,3 +94,16 @@ signup and create new api
     }
 ```
 
+- Gemini ani sample response
+```bash
+Subject: Weather Update: Mist 
+
+Hi [Recipient Name],
+
+Just wanted to let you know that there's a bit of mist outside at the moment. Visibility might be a little reduced, so do take care if you're heading out and about. 
+
+Regards,
+
+Shyam
+```
+
